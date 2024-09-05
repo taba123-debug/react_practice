@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 300px; /* Adjusted height */
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px ; 
+    margin: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 150px; /* Adjusted image height */
+    object-fit: cover;
+    border-bottom: 0px solid #ccc;
+    border-radius: 6px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between; /* Aligns the elements to the left and right */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header h5 {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.card-header h3 {
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+    margin-bottom: 10px;
+    white-space: initial; 
+}
+
+
+/* Styling for the rating stars */
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: gold;
+    margin-top: 5px;
+    bottom: -0.09px;
+    position: relative;
+}
+
+.read-more {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: -0.009px;
+ 
+}
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.read-more-btn {
+
+    background-color: black;
+    color: white;
+    border: 9px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* margin-top: -0.009px; */
+
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    /* color: black; */
+    display:block;
+    
+}
+
+.card:hover {
+    transform: scale(1.04);
+} 
+
+.card .view-more-btn {
+    display: none;
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover .view-more-btn {
+    display: block;
+}
+
+.card .view-more-btn:hover {
+    background-color: black;
+}
