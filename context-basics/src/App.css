@@ -1,0 +1,60 @@
+body{
+  background-color: black;
+}
+
+.main {
+  width: 400px; 
+  height: 400px; 
+  max-width: 80%; 
+  max-height: 80%; 
+  margin: 30px auto; 
+  border-radius: 3%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.context{
+  padding: 20px;
+  margin: 30px 90px 20px;
+  font-size: 32px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#name {
+  margin: 0px 0px 10px;
+  font-size: 24px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+
+#password {
+  font-size: 24px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+input[type="text"], input[type="password"] {
+  width: 200px; 
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border-radius: 3% 3% 3% 3%;
+}
+
+button {
+  width: 100px; 
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  border: 1.9px solid black;
+  border-radius: 50px;
+  margin:20px 80px 50px;
+  cursor: pointer;
+}
+
+
